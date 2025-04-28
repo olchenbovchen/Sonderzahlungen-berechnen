@@ -1,0 +1,36 @@
+# Betriebssystem-Dateien
+.DS_Store
+Thumbs.db
+
+# Editor-Dateien
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Abhängigkeiten
+node_modules/
+
+# Build-Verzeichnisse
+dist/
+build/
+
+# Umgebungsvariablen
+.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporäre Dateien
+*.tmp
+*.swp
+*~
+
+# JavaScript
+*.min.js
+
+# CSS
+*.min.css
+
+# Sicherungsdateien
+*.bak

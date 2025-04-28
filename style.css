@@ -1,0 +1,64 @@
+body {
+    background-image: url(mediamodifier-I3HPUolh5hA-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 10px;
+    width: 600px;
+    box-shadow: 10px 10px 5px 0px grey;
+    padding: 40px;
+    font-family: "Mukta", sans-serif;
+    font-weight: 500;
+ /* From https://css.glass */
+background: rgba(251, 248, 248, 0.28);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.9px);
+-webkit-backdrop-filter: blur(8.9px);
+border: 1px solid rgba(251, 248, 248, 0.83);
+}
+input {
+    padding: 7px;
+}
+h2, h3 {
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+#calculate, #clean {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 13px;
+    width: 150px;
+    box-shadow: 10px 10px 5px 0px grey;
+    background-color: #DDDDDD;
+}
+#calculate {
+    margin-right: 20px;
+}
+#result {
+    margin-top: 10px;
+}
+.insideSpan {
+    margin-left: 5px;
+}
+.final {
+    border: 1px solid black;
+    padding: 3px;
+    margin-left: 7px;
+    background-color: white;
+}
+
+@media all and (max-width:1024px) {
+    .container {
+        font-size: 20px;
+        margin: 0;
+    }
+    #calculate, #clean {
+        font-size: 15px;
+    }
+}

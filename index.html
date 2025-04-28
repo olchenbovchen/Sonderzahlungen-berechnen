@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonderzahlungen berechnen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="textContainer">
+        <h2>Sonderzahlungen</h2>
+        <p>Als Angestellte in Österreich hat man in den meisten Fällen</p>
+        <p>einen Anspruch auf sogenannte 13. und 14. Gehälter -</p>
+        <p>Urlaubszuschuss und Weihnachtsremuneration.</p>
+        <p>Falls man nicht das volle Jahr beschäftigt war</p>
+        <p>hat man nur einen <b>aliquoten</b> Anspruch.</p>
+    </div>
+    <form id="incomeForm">
+        <h3>Berechnung aliquote Sonderzahlungen</h3>
+        <p>Gehalt pro Monat (brutto):</p>
+        <input type="number" id="income" placeholder="Gehalt pro Monat" required>
+        <p>Anfang der Beschäftigung:</p>
+        <input type="date" id="startDate" required>
+        <p>Ende der Beschäftigung:</p>
+        <input type="date" id="endDate" required>
+        <br>
+        <button id="calculate" type="submit">Berechnen</button>
+        <button id="clean" type="submit">Bereinigen</button>
+    </form>
+    <div id="result">
+        <p>aliquote Sonderzahlung (brutto): <span class="insideSpan">€<span id="finalResult"></span></span></p>
+    </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script>
+</body>
+</html>
